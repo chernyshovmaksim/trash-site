@@ -22,6 +22,9 @@
 				background-color: #fff;
 				color: $dark-green;
 			}
+			&:hover > .icon-carret {
+				transform: rotate(180deg);
+			}
 			i.icon-carret {
 				font-size: 4px;
 			}
