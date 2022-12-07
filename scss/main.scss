@@ -3,7 +3,10 @@
 // Colors
 $green: #39b54a;
 $dark-green: #008512;
+$light-gray: #f0f1f5;
+$gray: #868686;
 $black: #1e2f45;
+$white: #fefefe;
 
 * {
 	box-sizing: border-box;
@@ -18,6 +21,9 @@ html {
 	width: 100%;
 	height: 100%;
 	font-family: "Manrope", sans-serif;
+}
+ul {
+	margin: 0;
 }
 
 //LOGO
