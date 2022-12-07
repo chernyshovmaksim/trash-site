@@ -51,6 +51,7 @@
 	display: none;
 	list-style: none;
 	position: absolute;
+	z-index: 99;
 	left: 0;
 	width: 100%;
 	top: calc(100% - 5px);
