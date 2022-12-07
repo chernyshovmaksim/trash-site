@@ -94,6 +94,7 @@
 	display: none;
 	width: 100%;
 	position: absolute;
+	z-index: 99;
 	left: 0;
 	top: calc(100% - 5px);
 	padding-top: 35px;
@@ -138,6 +139,9 @@
 		a {
 			color: $black;
 			padding: 0;
+			&:hover {
+				color: $dark-green;
+			}
 		}
 	}
 }
