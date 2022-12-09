@@ -1,0 +1,51 @@
+.services {
+}
+.services_container {
+	.row {
+		margin-top: 20px;
+	}
+}
+.container {
+}
+.service {
+	background-color: $light-gray;
+	background-repeat: no-repeat;
+	background-position: center right;
+	width: 100%;
+	border-radius: 25px;
+	padding: 35px;
+}
+.service__title {
+	max-width: 200px;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 120%;
+	color: $black;
+}
+.service__description {
+	margin-top: 15px;
+	max-width: 200px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 160%;
+	display: flex;
+	flex-direction: column;
+	a {
+		color: $black;
+	}
+}
+.service__link {
+	margin-top: 50px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 160%;
+	a {
+		text-decoration: none;
+		color: $black;
+		i {
+			color: $dark-green;
+			font-size: 16px;
+			padding-left: 20px;
+		}
+	}
+}

@@ -3,3 +3,10 @@
 	max-width: 1180px;
 	margin: 0 auto;
 }
+
+.row {
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 20px;
+}

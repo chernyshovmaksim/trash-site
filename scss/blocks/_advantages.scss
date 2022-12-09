@@ -1,12 +1,13 @@
 .advantages {
 	margin: 100px 0;
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 60px;
+	}
 }
-.container {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	gap: 60px;
-}
+
 .advantage {
 	display: flex;
 	align-items: center;

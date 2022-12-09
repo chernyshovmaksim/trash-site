@@ -3,8 +3,7 @@ import "swiper/css";
 //import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-const swiper = new Swiper(".swiper", {
-	autoplay: true,
+new Swiper(".swiper", {
 	modules: [Pagination],
 	pagination: {
 		el: ".swiper-pagination",
