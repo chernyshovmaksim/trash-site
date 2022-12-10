@@ -1,0 +1,15 @@
+.clients {
+	margin: 100px 0;
+}
+.clients_container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 60px;
+}
+.text-icon {
+	flex: 1 0 calc(25% - 60px);
+}
+.text-icon__icon {
+}
+.text-icon__text {
+}

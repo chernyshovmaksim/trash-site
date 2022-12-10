@@ -1,0 +1,17 @@
+// .text-icon
+.text-icon {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.text-icon__icon {
+	font-size: 40px;
+	color: $dark-green;
+}
+
+.text-icon__text {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 160%;
+	color: $black;
+}
