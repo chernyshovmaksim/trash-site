@@ -1,0 +1,29 @@
+.reviews {
+}
+.swiper-wrapper {
+	//display: flex;
+	//gap: 20px;
+}
+.review {
+	padding: 45px;
+	background-color: $light-gray;
+	min-width: 580px;
+	border-radius: 25px;
+}
+.review__rating {
+	font-size: 15px;
+	color: #ffb020;
+}
+.review__title {
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 120%;
+	text-transform: uppercase;
+	margin-top: 25px;
+}
+.review__body {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 160%;
+	margin-top: 15px;
+}

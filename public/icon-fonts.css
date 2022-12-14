@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?rlqzjy');
-  src:  url('fonts/icomoon.eot?rlqzjy#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?rlqzjy') format('truetype'),
-    url('fonts/icomoon.woff?rlqzjy') format('woff'),
-    url('fonts/icomoon.svg?rlqzjy#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?vsihgf');
+  src:  url('fonts/icomoon.eot?vsihgf#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?vsihgf') format('truetype'),
+    url('fonts/icomoon.woff?vsihgf') format('woff'),
+    url('fonts/icomoon.svg?vsihgf#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -31,27 +31,39 @@
 .icon-arrow:before {
   content: "\e901";
 }
-.icon-calculator:before {
+.icon-builder-company:before {
   content: "\e902";
 }
-.icon-card:before {
+.icon-calculator:before {
   content: "\e903";
 }
-.icon-carret:before {
+.icon-card:before {
   content: "\e904";
 }
-.icon-cup:before {
+.icon-carret:before {
   content: "\e905";
 }
-.icon-medal:before {
+.icon-cup:before {
   content: "\e906";
 }
-.icon-phone-icon:before {
+.icon-gov-com:before {
   content: "\e907";
 }
-.icon-Telegram:before {
+.icon-medal:before {
   content: "\e908";
 }
-.icon-whatsapp:before {
+.icon-phone-icon:before {
   content: "\e909";
+}
+.icon-star:before {
+  content: "\e90a";
+}
+.icon-Telegram:before {
+  content: "\e90b";
+}
+.icon-tszh-com:before {
+  content: "\e90c";
+}
+.icon-whatsapp:before {
+  content: "\e90d";
 }

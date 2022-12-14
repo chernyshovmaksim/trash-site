@@ -4,6 +4,7 @@ import "./public/icon-fonts.css";
 
 //import scripts
 import "./scripts/top-slider";
+import "./scripts/reviews";
 import { inputPhone } from "./scripts/input-masks";
 
 document.addEventListener("DOMContentLoaded", () => {
