@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 new Swiper(".top-slider", {
+	loop: true,
 	modules: [Pagination],
 	pagination: {
 		el: ".swiper-pagination",

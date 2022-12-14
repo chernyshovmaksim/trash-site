@@ -6,5 +6,7 @@ import "swiper/css";
 new Swiper(".reviews-swiper", {
 	slidesPerView: 1.5,
 	spaceBetween: 20,
+	loop: true,
 	centeredSlides: true,
+	autoplay: true,
 });
