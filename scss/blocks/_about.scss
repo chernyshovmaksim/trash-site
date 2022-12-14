@@ -1,0 +1,28 @@
+.about {
+}
+.about_container {
+	display: grid;
+	grid-template-areas:
+		"one one two"
+		"three three two";
+	gap: 20px;
+	.service {
+		&:nth-child(1) {
+			grid-area: one;
+			min-height: 345px;
+		}
+		&:nth-child(2) {
+			grid-area: two;
+		}
+		&:nth-child(3) {
+			grid-area: three;
+			min-height: 345px;
+		}
+	}
+	.service__link {
+		text-transform: uppercase;
+		font-weight: 800;
+		font-size: 16px;
+		line-height: 120%;
+	}
+}
