@@ -3,7 +3,7 @@ import "swiper/css";
 //import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-new Swiper(".swiper", {
+new Swiper(".top-slider", {
 	modules: [Pagination],
 	pagination: {
 		el: ".swiper-pagination",
