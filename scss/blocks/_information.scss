@@ -1,0 +1,33 @@
+.information {
+	.information_container {
+		display: grid;
+		grid-template-areas:
+			"one one two two three three"
+			"four four four five five five";
+		gap: 20px;
+	}
+	.service {
+		min-height: 345px;
+		&:nth-child(1) {
+			grid-area: one;
+		}
+		&:nth-child(2) {
+			grid-area: two;
+		}
+		&:nth-child(3) {
+			grid-area: three;
+		}
+		&:nth-child(4) {
+			grid-area: four;
+		}
+		&:nth-child(5) {
+			grid-area: five;
+		}
+	}
+	.service__link {
+		font-weight: 800;
+		font-size: 16px;
+		line-height: 120%;
+		text-transform: uppercase;
+	}
+}
