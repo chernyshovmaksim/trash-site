@@ -15,3 +15,29 @@
 	line-height: 160%;
 	color: $black;
 }
+
+// Form
+.form-input {
+	background: #fefefe;
+	border: none;
+	border-radius: 25px;
+	height: 45px;
+	width: 200px;
+	padding: 10px 25px;
+	color: $black;
+	&:focus {
+		outline: none;
+	}
+}
+
+.form-button {
+	background: $green;
+	border-radius: 25px;
+	width: 290px;
+	height: 50px;
+	border: none;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 120%;
+	color: #fff;
+}
