@@ -1,5 +1,8 @@
 .navigation {
 	margin-top: 53px;
+	@media (max-width: 1270px) {
+		display: none;
+	}
 }
 .container {
 	position: relative;

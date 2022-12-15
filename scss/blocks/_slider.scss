@@ -15,11 +15,16 @@
 .swiper-content {
 	background-position: center;
 	background-size: cover;
+	background-repeat: no-repeat;
+	@media (max-width: 576px) {
+		background-position: bottom right;
+		background-size: 200%;
+		background-color: $light-gray;
+	}
 }
 .swiper-container {
 	width: 100%;
 	max-width: 880px;
-	min-height: 410px;
 }
 .slide {
 	display: flex;
@@ -29,6 +34,13 @@
 	flex-direction: column;
 	justify-content: center;
 	margin-left: 150px;
+	min-height: 410px;
+	@media (max-width: 576px) {
+		max-width: 100%;
+		margin-left: 0;
+		padding: 40px 38px;
+		justify-content: flex-start;
+	}
 }
 .slide__title {
 	font-weight: 800;
@@ -37,8 +49,16 @@
 	color: $black;
 	max-width: 400px;
 	text-transform: uppercase;
+	@media (max-width: 576px) {
+		font-weight: 800;
+		font-size: 21px;
+		line-height: 110%;
+	}
 }
-.swiper-pagination {
+.slide__description {
+	@media (max-width: 576px) {
+		display: none;
+	}
 }
 .swiper-pagination-bullet {
 	height: 3px !important;

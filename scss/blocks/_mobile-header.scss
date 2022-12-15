@@ -1,0 +1,19 @@
+.mobile-header {
+	display: none;
+	margin-top: 10px;
+	margin-bottom: 27px;
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+	.logo {
+		a {
+			width: 220px !important;
+			height: 35px;
+		}
+	}
+
+	@media (max-width: 1270px) {
+		display: flex;
+	}
+}

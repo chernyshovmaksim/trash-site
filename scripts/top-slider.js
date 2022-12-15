@@ -5,6 +5,7 @@ import "swiper/css/pagination";
 
 new Swiper(".top-slider", {
 	loop: true,
+	slidesPerView: 1,
 	modules: [Pagination],
 	pagination: {
 		el: ".swiper-pagination",
