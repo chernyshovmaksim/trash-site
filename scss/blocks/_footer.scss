@@ -56,3 +56,98 @@
 		}
 	}
 }
+
+.footer {
+	.icon-whatsapp {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 7px;
+		border-radius: 4px;
+		text-decoration: none;
+		color: #fff;
+		background-color: #39b54a;
+	}
+	.icon-Telegram {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 7px;
+		border-radius: 4px;
+		text-decoration: none;
+		color: #fff;
+		background-color: #419fd9;
+	}
+}
+.footer-contacts {
+	&__title {
+		font-weight: 800;
+		font-size: 16px;
+		line-height: 120%;
+		text-transform: uppercase;
+	}
+	&__information {
+		margin-top: 25px;
+		display: flex;
+		flex-direction: column;
+	}
+	&__phones {
+		display: flex;
+		flex-direction: column;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 100%;
+		a {
+			text-decoration: none;
+			color: $black;
+			margin-bottom: 10px;
+		}
+	}
+	&__email {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 160%;
+		a {
+			color: $dark-green;
+			text-decoration: none;
+		}
+	}
+	&__social {
+		display: flex;
+		align-items: center;
+		margin-top: 23px;
+		span {
+			width: 110px;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 120%;
+			margin-right: 10px;
+		}
+		div {
+			display: flex;
+			align-items: center;
+			gap: 5px;
+			a {
+				text-decoration: none;
+			}
+		}
+	}
+	&__buttons {
+		margin-top: 55px;
+		display: flex;
+		flex-direction: column;
+		a {
+			display: block;
+			width: 290px;
+			text-align: center;
+			padding: 16px 0;
+			background-color: $green;
+			text-decoration: none;
+			color: #fff;
+			border-radius: 25px;
+			&:last-child {
+				margin-top: 15px;
+			}
+		}
+	}
+}
