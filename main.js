@@ -2,6 +2,9 @@
 import "./scss/main.scss";
 import "./public/icon-fonts.css";
 
+//import utils
+import "./scripts/pxpe";
+
 //import scripts
 import "./scripts/top-slider";
 import "./scripts/reviews";
