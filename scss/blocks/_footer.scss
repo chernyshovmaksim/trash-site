@@ -35,6 +35,9 @@
 		flex: 1 1 33%;
 		@media (max-width: 1270px) {
 			width: 100%;
+			&:nth-child(2) {
+				display: none;
+			}
 		}
 	}
 }
@@ -167,5 +170,37 @@
 				margin-top: 15px;
 			}
 		}
+	}
+}
+
+.footer__copyright {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 160%;
+	color: $black;
+	padding: 0 35px;
+	@media (max-width: 1270px) {
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 160%;
+	}
+}
+.footer__copyright_info {
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 160%;
+	color: $gray;
+	padding: 0 35px;
+	@media (max-width: 1270px) {
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 160%;
+		margin-bottom: 70px;
+	}
+}
+
+.footer_logo {
+	@media (max-width: 1270px) {
+		display: none;
 	}
 }

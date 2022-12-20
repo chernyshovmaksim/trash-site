@@ -3,6 +3,10 @@
 	grid-template-areas:
 		"one one two"
 		"three three two";
+
+	@media (max-width: 1270px) {
+		grid-template-columns: 1fr !important;
+	}
 	gap: 20px;
 	.service {
 		&:nth-child(1) {

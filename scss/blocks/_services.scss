@@ -1,6 +1,9 @@
 .services_container {
 	.row {
 		margin-top: 20px;
+		@media (max-width: 1270px) {
+			flex-wrap: wrap;
+		}
 	}
 }
 .service {
