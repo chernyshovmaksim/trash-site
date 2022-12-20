@@ -4,6 +4,10 @@
 .callback_container {
 	display: flex;
 	align-items: center;
+
+	@media (max-width: 1270px) {
+		flex-direction: column;
+	}
 }
 .callback__image {
 	img {

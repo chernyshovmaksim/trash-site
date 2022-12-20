@@ -5,6 +5,10 @@
 			"one one two two three three"
 			"four four four five five five";
 		gap: 20px;
+
+		@media (max-width: 1270px) {
+			grid-template-areas: "one" "two" "three" "four" "five";
+		}
 	}
 	.service {
 		min-height: 345px;

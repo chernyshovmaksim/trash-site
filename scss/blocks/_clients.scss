@@ -1,5 +1,8 @@
 .clients {
 	margin: 100px 0;
+	@media (max-width: 1270px) {
+		display: none;
+	}
 }
 .clients_container {
 	display: flex;
