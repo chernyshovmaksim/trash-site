@@ -1,10 +1,15 @@
 export class Hamburger {
-	#el;
+	#elHamburger;
+	#elSiteName;
 
-	constructor(el) {
-		console.log("Hamburger plugin init");
-		this.#el = el;
-		el.addEventListener("click", () => {
+	constructor(elHamburger, elSiteName) {
+		window.onbeforeunload = () => {
+			localStorage.setItem("statusMM", "0");
+		};
+
+		this.#elHamburger = elHamburger;
+		this.#elSiteName = elSiteName;
+		this.#elHamburger.addEventListener("click", () => {
 			this.#changeStatus();
 			this.#checkStatus();
 		});
@@ -25,9 +30,11 @@ export class Hamburger {
 			const status = localStorage.getItem("statusMM");
 
 			if (status == "0") {
-				this.#el.classList.remove("hamburger--active");
+				this.#elHamburger.classList.remove("hamburger--active");
+				this.#elSiteName.classList.remove("site-name--active");
 			} else {
-				this.#el.classList.add("hamburger--active");
+				this.#elHamburger.classList.add("hamburger--active");
+				this.#elSiteName.classList.add("site-name--active");
 			}
 		}
 	}

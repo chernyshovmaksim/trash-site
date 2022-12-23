@@ -14,7 +14,8 @@ import { Hamburger } from "./scripts/mobile-menu";
 document.addEventListener("DOMContentLoaded", () => {
 	//Mobile menu
 	const hamburgerEl = document.querySelector(".hamburger");
-	new Hamburger(hamburgerEl);
+	const siteNameEl = document.querySelector(".site-name");
+	new Hamburger(hamburgerEl, siteNameEl);
 
 	//Form, input phone
 	const inputsTel = document.querySelectorAll("input[name=phone]");
