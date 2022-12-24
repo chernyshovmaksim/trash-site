@@ -53,3 +53,13 @@
 		}
 	}
 }
+
+@media (max-width: 1270px) {
+	.services {
+		.service {
+			min-height: 430px;
+			background-position: bottom right;
+			background-size: 70%;
+		}
+	}
+}
