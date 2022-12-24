@@ -25,11 +25,11 @@
 	color: $black;
 	opacity: 0;
 	visibility: hidden;
-	transition: all 0.5s;
+	transition: all 0.17s;
 	&--active {
 		opacity: 1;
 		visibility: visible;
-		transition: all 0.5s;
+		transition: all 0.17s;
 	}
 }
 
@@ -50,19 +50,21 @@
 	}
 	&--active {
 		position: relative;
-		transition: all 0.3s;
 		.hamburger__line {
 			position: absolute;
 			left: 50%;
 			top: 50%;
+			transition: all 0.17s;
 			&:nth-child(1) {
 				transform: translateX(-50%) translateY(-50%) rotate(45deg);
+				transition: all 0.17s;
 			}
 			&:nth-child(2) {
 				display: none;
 			}
 			&:nth-child(3) {
 				transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+				transition: all 0.17s;
 			}
 		}
 	}

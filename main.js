@@ -13,9 +13,11 @@ import { Hamburger } from "./scripts/mobile-menu";
 
 document.addEventListener("DOMContentLoaded", () => {
 	//Mobile menu
-	const hamburgerEl = document.querySelector(".hamburger");
-	const siteNameEl = document.querySelector(".site-name");
-	new Hamburger(hamburgerEl, siteNameEl);
+	if (document.querySelector(".hamburger")) {
+		const hamburgerEl = document.querySelector(".hamburger");
+		const siteNameEl = document.querySelector(".site-name");
+		new Hamburger(hamburgerEl, siteNameEl);
+	}
 
 	//Form, input phone
 	const inputsTel = document.querySelectorAll("input[name=phone]");
