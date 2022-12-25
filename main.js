@@ -29,7 +29,13 @@ document.addEventListener("DOMContentLoaded", () => {
 	if (document.querySelector(".advantages-mobile")) {
 		document.querySelectorAll(".advantages-mobile").forEach((el) => {
 			el.addEventListener("click", (e) => {
-				if (e.target.classList.contains("advantage-mobile__bodyHead")) {
+				//console.log(e.target.classList);
+				if (
+					e.target.classList.contains("advantage-mobile__bodyHead") ||
+					e.target.classList.contains("advantage-mobile__carret") ||
+					e.target.classList.contains("icon-carret") ||
+					e.target.classList.contains("advantage-mobile__preview-icons")
+				) {
 					el.classList.toggle("advantages-mobile--active");
 				}
 			});
