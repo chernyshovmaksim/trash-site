@@ -24,4 +24,15 @@ document.addEventListener("DOMContentLoaded", () => {
 	inputsTel.forEach((el) => {
 		inputPhone(el);
 	});
+
+	//Advantages
+	if (document.querySelector(".advantages-mobile")) {
+		document.querySelectorAll(".advantages-mobile").forEach((el) => {
+			el.addEventListener("click", (e) => {
+				if (e.target.classList.contains("advantage-mobile__bodyHead")) {
+					el.classList.toggle("advantages-mobile--active");
+				}
+			});
+		});
+	}
 });
