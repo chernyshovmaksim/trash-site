@@ -1,7 +1,7 @@
 .review {
 	padding: 45px;
 	background-color: $light-gray;
-	min-width: 580px;
+
 	border-radius: 25px;
 }
 .review__rating {
@@ -11,13 +11,25 @@
 .review__title {
 	font-weight: 800;
 	font-size: 16px;
-	line-height: 120%;
+	line-height: 1.2;
 	text-transform: uppercase;
 	margin-top: 25px;
 }
 .review__body {
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 160%;
+	line-height: 1.6;
 	margin-top: 15px;
+}
+
+@media (max-width: 1270px) {
+	.review {
+		min-width: none;
+		max-width: 100%;
+	}
+}
+@media (min-width: 1270px) {
+	.review {
+		min-width: 580px;
+	}
 }
