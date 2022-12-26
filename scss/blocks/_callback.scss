@@ -60,6 +60,13 @@
 
 #callback-form {
 	div {
+		@media (max-width: 1270px) {
+			display: flex;
+			flex-direction: column;
+			.form-input {
+				width: 100%;
+			}
+		}
 		input {
 			margin-right: 20px;
 		}
@@ -78,5 +85,35 @@
 				line-height: 160%;
 			}
 		}
+	}
+}
+
+@media (max-width: 1270px) {
+	.callback {
+		background: none;
+	}
+	.callback__image {
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.callback__title {
+		font-weight: 800;
+		font-size: 21px;
+		line-height: 1.1;
+	}
+	.callback_container {
+		background-color: $light-gray;
+		border-radius: 25px;
+		padding: 30px;
+	}
+
+	.form-input {
+		margin-right: 0 !important;
+		margin-bottom: 15px;
+	}
+	.form-button {
+		width: 100% !important;
 	}
 }
