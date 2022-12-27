@@ -1,6 +1,8 @@
 export class Hamburger {
 	#elHamburger;
 	#elSiteName;
+	#elMobileMenu;
+	#elsListItemParent;
 
 	constructor(elHamburger, elSiteName) {
 		window.onbeforeunload = () => {
@@ -9,9 +11,23 @@ export class Hamburger {
 
 		this.#elHamburger = elHamburger;
 		this.#elSiteName = elSiteName;
+		this.#elMobileMenu = document.querySelector(".mobile-menu");
+		this.#elsListItemParent = document.querySelectorAll(
+			".mobile-menu__list-item--parent"
+		);
+
 		this.#elHamburger.addEventListener("click", () => {
 			this.#changeStatus();
 			this.#checkStatus();
+		});
+
+		this.#elsListItemParent.forEach((el) => {
+			el.addEventListener("click", (e) => {
+				e.preventDefault();
+				el.querySelector(".mobile-menu__submenu").classList.toggle(
+					"mobile-menu__submenu--active"
+				);
+			});
 		});
 	}
 	#changeStatus() {
@@ -32,9 +48,11 @@ export class Hamburger {
 			if (status == "0") {
 				this.#elHamburger.classList.remove("hamburger--active");
 				this.#elSiteName.classList.remove("site-name--active");
+				this.#elMobileMenu.classList.remove("mobile-menu--active");
 			} else {
 				this.#elHamburger.classList.add("hamburger--active");
 				this.#elSiteName.classList.add("site-name--active");
+				this.#elMobileMenu.classList.add("mobile-menu--active");
 			}
 		}
 	}

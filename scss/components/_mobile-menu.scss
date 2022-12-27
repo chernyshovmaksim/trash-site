@@ -1,0 +1,144 @@
+.mobile-menu {
+	display: none;
+	&--active {
+		display: block;
+	}
+	&__container {
+		background-color: $light-gray;
+		border-radius: 25px;
+		padding-bottom: 30px;
+	}
+	&__nav {
+	}
+	&__list {
+		list-style: none;
+	}
+	&__list-item {
+		padding: 0 30px;
+		a {
+			display: block;
+			padding: 20px 0;
+			border-bottom: 1px solid $white;
+			text-decoration: none;
+			font-weight: 600;
+			font-size: 15px;
+			line-height: 1;
+			color: $black;
+		}
+
+		&--parent {
+			padding: 0;
+			a {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding-left: 30px;
+				padding-right: 30px;
+				i {
+					font-size: 6px;
+					color: $dark-green;
+				}
+			}
+		}
+	}
+	&__submenu {
+		list-style: none;
+		display: none;
+
+		&--active {
+			display: block;
+		}
+	}
+	&__submenu-item {
+		background-color: $white;
+		border-bottom: 1px solid $light-gray;
+	}
+	&__info {
+		margin-top: 40px;
+		padding: 0 30px;
+	}
+	&__info-block {
+		margin-bottom: 30px;
+		&:last-child {
+			.mobile-menu__info-body {
+				flex-direction: column;
+				align-items: start;
+				span {
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 160%;
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+	&__info-icon {
+		color: $dark-green;
+		font-size: 16px;
+	}
+	&__info-body {
+		margin-top: 8px;
+		display: flex;
+		align-items: center;
+	}
+	&__info-phones {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 100%;
+		a {
+			color: $black;
+			text-decoration: none;
+		}
+	}
+	&__info-messengers {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		margin-left: auto;
+		a {
+			text-decoration: none;
+		}
+	}
+	&__info-whatsapp {
+		background-color: #39b54a;
+		display: block;
+		padding: 7px 5px;
+		border-radius: 7px;
+		text-decoration: none;
+		color: #fff;
+	}
+	&__info-telegram {
+		background-color: #419fd9;
+		display: block;
+		padding: 7px 5px;
+		border-radius: 7px;
+		text-decoration: none;
+		color: #fff;
+	}
+	&__buttons {
+		padding: 0 30px;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		a {
+			background-color: $dark-green;
+			color: $white;
+			text-decoration: none;
+			border-radius: 20px;
+			height: 45px;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&:first-child {
+				background-color: transparent;
+				border: 1px solid $dark-green;
+				color: $dark-green;
+			}
+		}
+	}
+}
