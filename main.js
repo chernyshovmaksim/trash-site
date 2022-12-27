@@ -10,6 +10,7 @@ import "./scripts/top-slider";
 import "./scripts/reviews";
 import { inputPhone } from "./scripts/input-masks";
 import { Hamburger } from "./scripts/mobile-menu";
+import { Quiz } from "./scripts/quiz";
 
 document.addEventListener("DOMContentLoaded", () => {
 	//Mobile menu
@@ -41,4 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			});
 		});
 	}
+
+	//Quiz
+	new Quiz();
 });

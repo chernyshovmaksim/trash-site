@@ -61,11 +61,10 @@ ul {
 	}
 }
 
-@import "./elements";
-
 //Components
 @import "./components/mobile-advantages";
 @import "./components/mobile-menu";
+@import "./components/quiz";
 
 // Blocks
 @import "./blocks/header";
