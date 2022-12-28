@@ -8,6 +8,14 @@
 	z-index: 99;
 	display: flex;
 	align-items: center;
+	overflow-y: scroll;
+	&__screen {
+		display: none;
+
+		&.active {
+			display: block;
+		}
+	}
 	&__container {
 		background-color: $white;
 		border-radius: 25px;
@@ -147,6 +155,9 @@
 		border-radius: 25px;
 		gap: 25px;
 		position: relative;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.6;
 		i {
 			&:first-child {
 				font-size: 30px;
@@ -166,6 +177,25 @@
 				right: 0;
 				transform: translateX(50%) translateY(-50%);
 			}
+		}
+	}
+}
+
+//Screens
+
+.quiz {
+	.megamenu__container {
+		background-color: transparent;
+		padding: 0;
+	}
+	.megamenu__links {
+		a {
+			text-decoration: none;
+		}
+	}
+	.megamenu__image {
+		img {
+			width: 80%;
 		}
 	}
 }
