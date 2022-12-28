@@ -1,34 +1,171 @@
 .quiz {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba($black, 0.9);
+	z-index: 99;
+	display: flex;
+	align-items: center;
 	&__container {
+		background-color: $white;
+		border-radius: 25px;
+		padding: 35px;
 	}
 	&__header {
 	}
 	&__title {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.6;
+	}
+	&__heading {
+		font-weight: 800;
+		font-size: 16px;
+		line-height: 1.2;
+		margin-top: 35px;
 	}
 	&__discount {
+		display: flex;
+	}
+	&__discount-btn {
+		margin-left: auto;
+		padding: 10px 25px;
+		background-color: $light-gray;
+		border-radius: 25px;
+		color: $dark-green;
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		span {
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 100%;
+		}
+		i {
+			&:first-child {
+				font-size: 30px;
+			}
+		}
 	}
 	&__progress {
 	}
 	&__progress-title {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 160%;
 	}
 	&__progress-container {
+		height: 10px;
+		background-color: $light-gray;
+		border-radius: 5px;
+		margin-top: 5px;
+		margin-bottom: 35px;
+		overflow: hidden;
+		position: relative;
 	}
 	&__progress-percent {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 25%;
+		background-color: $green;
+		border-radius: 5px;
+		transition: 0.5s ease-in-out;
 	}
 	&__body {
 	}
 	&__controls {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 25px;
 	}
 	&__btn {
+		padding: 10px 25px;
+		border-radius: 25px;
+		background-color: $light-gray;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.6;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		cursor: pointer;
 	}
 	&__btn--prev {
+		i {
+			display: block;
+			transform: rotate(90deg);
+			font-size: 4px;
+		}
 	}
 	&__btn--next {
+		background-color: $green;
+		color: $white;
+		i {
+			display: block;
+			transform: rotate(-90deg);
+			font-size: 4px;
+		}
 	}
 	&__footer {
+		margin-top: 26px;
+		background-color: $light-gray;
+		border-radius: 25px;
+		margin-left: -35px;
+		margin-right: -35px;
+		margin-bottom: -35px;
+		padding: 35px;
+
+		display: flex;
+		align-items: center;
 	}
 	&__footer-title {
+		font-size: 14px;
+		position: relative;
+		&::before {
+			content: "";
+			height: 8px;
+			width: 8px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			border-radius: 50%;
+			background-color: $dark-green;
+			transform: translateX(-14px);
+		}
 	}
 	&__footer-discount {
+		margin-left: 25px;
+		display: flex;
+		align-items: center;
+		padding: 10px 25px;
+		background-color: $white;
+		border-radius: 25px;
+		gap: 25px;
+		position: relative;
+		i {
+			&:first-child {
+				font-size: 30px;
+				color: $dark-green;
+			}
+			&:last-child {
+				display: flex;
+				width: 25px;
+				height: 26px;
+				align-items: center;
+				justify-content: center;
+				background-color: $white;
+				color: $dark-green;
+				border-radius: 50%;
+				position: absolute;
+				top: 0;
+				right: 0;
+				transform: translateX(50%) translateY(-50%);
+			}
+		}
 	}
 }

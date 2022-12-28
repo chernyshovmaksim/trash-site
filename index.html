@@ -15,7 +15,7 @@
 		<title>Вывоз мусора</title>
 	</head>
 
-	<body>
+	<body class="no-scroll">
 		<header class="header">
 			<div class="container">
 				<div class="header__top">
@@ -305,42 +305,44 @@
 					<div class="quiz__title">
 						Вывоз мусора в Новосибирске и области от 1900 рублей!
 					</div>
-					<h4 class="quiz__title">Какой услугой хотите воспользоваться ?</h4>
+					<h4 class="quiz__heading">Какой услугой хотите воспользоваться ?</h4>
 					<div class="quiz__discount">
-						<i></i>
-						<span>Ваша скидка : 0 %</span>
-						<i></i>
+						<div class="quiz__discount-btn">
+							<i class="icon-discount"></i>
+							<span>Ваша скидка : 0 %</span>
+							<i class="icon-double-arrow"></i>
+						</div>
 					</div>
 					<div class="quiz__progress">
-						<div class="quiz__progress-title"></div>
+						<div class="quiz__progress-title">Готово: 0 %</div>
 						<div class="quiz__progress-container">
 							<div class="quiz__progress-percent"></div>
 						</div>
 					</div>
 				</div>
 				<div class="quiz__body">
-					<div class="quiz__screen--one active">one</div>
-					<div class="quiz__screen--two">two</div>
-					<div class="quiz__screen--three">three</div>
-					<div class="quiz__screen--four">four</div>
-					<div class="quiz__screen--five">five</div>
+					<div class="quiz__screen--one active" data-screen="1">one</div>
+					<div class="quiz__screen--two" data-screen="2">two</div>
+					<div class="quiz__screen--three" data-screen="3">three</div>
+					<div class="quiz__screen--four" data-screen="4">four</div>
+					<div class="quiz__screen--five" data-screen="5">five</div>
 				</div>
 				<div class="quiz__controls">
 					<div class="quiz__btn quiz__btn--prev">
-						<i></i>
+						<i class="icon-carret"></i>
 						<span>Назад</span>
 					</div>
 					<div class="quiz__btn quiz__btn--next">
-						<i></i>
 						<span>Вперед</span>
+						<i class="icon-carret"></i>
 					</div>
 				</div>
 				<div class="quiz__footer">
 					<div class="quiz__footer-title">Пройдите опрос, чтобы получить</div>
 					<div class="quiz__footer-discount">
-						<i></i>
-						<span>Скидку на вывоз мусора в 20%</span>
-						<i></i>
+						<i class="icon-discount"></i>
+						<span>Скидку на вывоз <br />мусора в 20%</span>
+						<i class="icon-lock"></i>
 					</div>
 				</div>
 			</div>
