@@ -44,5 +44,5 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 
 	//Quiz
-	new Quiz();
+	const quiz = new Quiz();
 });
