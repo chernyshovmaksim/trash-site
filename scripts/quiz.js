@@ -25,7 +25,20 @@ export class Quiz {
 			if (e.target.classList.contains("quiz--active")) {
 				e.target.classList.remove("quiz--active");
 				document.body.classList.remove("no-scroll");
+				localStorage.setItem("quizStep", 1);
+				this.#step = 1;
+				this.#changeScreen();
+				this.#changeProgress();
 			}
+		});
+
+		document.querySelectorAll('a[href="#calculator"]').forEach((el) => {
+			el.addEventListener("click", (e) => {
+				e.preventDefault();
+				if (document.querySelector(".quiz")) {
+					document.querySelector(".quiz").classList.add("quiz--active");
+				}
+			});
 		});
 	}
 
