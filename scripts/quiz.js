@@ -1,11 +1,21 @@
 export class Quiz {
 	#step;
 	#steps;
+	#stepPer;
 	#elsScreen;
 	#elControllNext;
 	#elControllPrev;
 
+	#progressContainer;
+	#progressLine;
+	#progressPercent;
+	#progressTitle;
+
 	constructor() {
+		window.onbeforeunload = () => {
+			localStorage.setItem("quizStep", 1);
+		};
+
 		this.#initStore();
 		this.#initControls();
 		this.#initScreens();
@@ -53,7 +63,13 @@ export class Quiz {
 		}
 	}
 
-	#initProgress() {}
+	#initProgress() {
+		this.#stepPer = 100 / this.#steps;
+		this.#progressLine = document.querySelector(".quiz__progress-percent");
+		this.#progressLine.style.width = `${this.#stepPer}%`;
+		this.#progressTitle = document.querySelector(".quiz__progress-title span");
+		this.#progressTitle.innerHTML = Math.round(this.#stepPer * this.#step);
+	}
 
 	/**
 	 * Change screen logic
@@ -72,6 +88,14 @@ export class Quiz {
 	}
 
 	/**
+	 * Change progress
+	 */
+	#changeProgress() {
+		this.#progressLine.style.width = `${this.#stepPer * this.#step}%`;
+		this.#progressTitle.innerHTML = Math.round(this.#stepPer * this.#step);
+	}
+
+	/**
 	 * Step increment and decrement
 	 */
 
@@ -81,6 +105,7 @@ export class Quiz {
 			let newStep = currentStep + 1;
 			localStorage.setItem("quizStep", newStep);
 			this.#changeScreen();
+			this.#changeProgress();
 		}
 	}
 	#decrementStep() {
@@ -89,6 +114,7 @@ export class Quiz {
 			let newStep = currentStep - 1;
 			localStorage.setItem("quizStep", newStep);
 			this.#changeScreen();
+			this.#changeProgress();
 		}
 	}
 }
