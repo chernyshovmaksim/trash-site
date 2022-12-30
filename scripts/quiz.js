@@ -20,6 +20,13 @@ export class Quiz {
 		this.#initControls();
 		this.#initScreens();
 		this.#initProgress();
+
+		document.querySelector(".quiz").addEventListener("click", (e) => {
+			if (e.target.classList.contains("quiz--active")) {
+				e.target.classList.remove("quiz--active");
+				document.body.classList.remove("no-scroll");
+			}
+		});
 	}
 
 	/**
