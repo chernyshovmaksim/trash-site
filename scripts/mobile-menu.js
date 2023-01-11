@@ -23,6 +23,7 @@ export class Hamburger {
 
 		this.#elsListItemParent.forEach((el) => {
 			el.addEventListener("click", (e) => {
+				console.log(e.target);
 				e.preventDefault();
 				el.querySelector(".mobile-menu__submenu").classList.toggle(
 					"mobile-menu__submenu--active"

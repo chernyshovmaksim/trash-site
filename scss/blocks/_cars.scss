@@ -1,0 +1,25 @@
+.cars {
+	&_container {
+		display: flex;
+		gap: 20px;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}
+
+.service {
+	&__title {
+	}
+	&__description {
+	}
+	&__link {
+	}
+}
+.service-car {
+	width: calc(50% - 20px / 2);
+	@media (max-width: 1270px) {
+		width: 100%;
+		min-height: 430px;
+		background-position: bottom right;
+	}
+}

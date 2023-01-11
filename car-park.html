@@ -69,14 +69,97 @@
 					<span class="hamburger__line"></span>
 					<span class="hamburger__line"></span>
 				</div>
-				<div class="mobile-menu">
-					<div class="mobile-menu__container container"></div>
-				</div>
 			</div>
 			<div class="site-name container">
 				Официальная утилизация и вывоз мусора
 			</div>
 		</section>
+
+		<div class="mobile-menu">
+			<div class="mobile-menu__container container">
+				<nav class="mobile-menu__nav">
+					<ul class="mobile-menu__list">
+						<li class="mobile-menu__list-item"><a href="#">Главная</a></li>
+						<li class="mobile-menu__list-item mobile-menu__list-item--parent">
+							<a href="#">Услуги <i class="icon-carret"></i></a>
+							<ul class="mobile-menu__submenu">
+								<li class="mobile-menu__submenu-item">
+									<a href="#">Вывоз и утилизация мусора</a>
+								</li>
+								<li class="mobile-menu__submenu-item">
+									<a href="#">Вывоз строительного мусора</a>
+								</li>
+								<li class="mobile-menu__submenu-item">
+									<a href="#">Вывоз из квартиры, офиса, дачи или гаража</a>
+								</li>
+								<li class="mobile-menu__submenu-item">
+									<a href="#">Вывоз снега</a>
+								</li>
+							</ul>
+						</li>
+						<li class="mobile-menu__list-item">
+							<a href="./car-park.html">Наша техника</a>
+						</li>
+						<li class="mobile-menu__list-item"><a href="#">Прайс</a></li>
+						<li class="mobile-menu__list-item mobile-menu__list-item--parent">
+							<a href="#">О компании <i class="icon-carret"></i></a>
+							<ul class="mobile-menu__submenu">
+								<li class="mobile-menu__submenu-item">
+									<a href="#">О нас</a>
+								</li>
+								<li class="mobile-menu__submenu-item">
+									<a href="#">Как мы работаем</a>
+								</li>
+								<li class="mobile-menu__submenu-item">
+									<a href="#">Почему мы</a>
+								</li>
+							</ul>
+						</li>
+						<li class="mobile-menu__list-item"><a href="#">Юр.Лицам</a></li>
+						<li class="mobile-menu__list-item"><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="mobile-menu__info">
+					<div class="mobile-menu__info-block">
+						<div class="mobile-menu__info-icon">
+							<i class="icon-phone"></i>
+						</div>
+						<div class="mobile-menu__info-body">
+							<div class="mobile-menu__info-phones">
+								<a href="/">+7 (963) 466-12-26</a>
+								<a href="/">+7 (963) 466-12-26</a>
+							</div>
+							<div class="mobile-menu__info-messengers">
+								<a class="mobile-menu__info-whatsapp" href="/"
+									><i class="icon-whatsapp"></i
+								></a>
+								<a class="mobile-menu__info-telegram" href="/"
+									><i class="icon-Telegram"></i
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="mobile-menu__info-block">
+						<div class="mobile-menu__info-icon">
+							<i class="icon-24"></i>
+						</div>
+						<div class="mobile-menu__info-body">
+							<span>Выезд на заказ: <br /><strong>Круглосуточно</strong></span>
+							<span
+								>Время приема звонков: <br /><strong>9:00 - 21:00</strong></span
+							>
+						</div>
+					</div>
+				</div>
+
+				<div class="mobile-menu__buttons">
+					<a href="/">
+						<i class="icon-calculator"></i>&nbsp; Рассчитать стоимость
+					</a>
+					<a href="/">Заказать звонок</a>
+				</div>
+			</div>
+		</div>
 
 		<section class="navigation">
 			<div class="container">
@@ -208,7 +291,7 @@
 							<a href="/">Контакты</a>
 						</li>
 						<li class="nav__item">
-							<a href="/">
+							<a href="#calculator">
 								<span><i class="icon-calculator"></i>&nbsp; Калькулятор</span>
 							</a>
 						</li>
@@ -218,73 +301,142 @@
 			<!-- /.container -->
 		</section>
 
-		<section class="slider">
-			<div class="container slider_container">
-				<!-- Slider main container -->
-				<div class="swiper top-slider">
-					<!-- Additional required wrapper -->
-					<div class="swiper-wrapper">
-						<!-- Slides -->
-						<div class="swiper-slide">
-							<div
-								class="swiper-content"
-								style="background-image: url(./img/top-slider/slide-1.png)"
-							>
-								<div class="swiper-container slide">
-									<div class="slide__title">
-										ВЫВОЗ И УТИЛИЗАЦИЯ СТРОИТЕЛЬНЫХ ОТХОДОВ и мусора
-									</div>
-									<div class="slide__description">
-										Вы совершаете переезд или возможно вам требуется перевезти
-										большой и габаритный груз, но вы беспокоитесь о целостности
-										своих вещей Предлагаем вам заказать грузовое авто
-										с грузчиками
-									</div>
+		<div class="quiz">
+			<div class="quiz__container container">
+				<div class="quiz__header">
+					<div class="quiz__title">
+						Вывоз мусора в Новосибирске и области от 1900 рублей!
+					</div>
+					<h4 class="quiz__heading">Какой услугой хотите воспользоваться ?</h4>
+					<div class="quiz__discount">
+						<div class="quiz__discount-btn">
+							<i class="icon-discount"></i>
+							<span>Ваша скидка : 0 %</span>
+							<i class="icon-double-arrow"></i>
+						</div>
+					</div>
+					<div class="quiz__progress">
+						<div class="quiz__progress-title">Готово: <span>0</span> %</div>
+						<div class="quiz__progress-container">
+							<div class="quiz__progress-percent"></div>
+						</div>
+					</div>
+				</div>
+				<div class="quiz__body">
+					<div class="quiz__screen quiz__screen--one">
+						<div class="megamenu__container">
+							<div class="megamenu__item">
+								<div class="megamenu__title">
+									Вывоз и&nbsp;утилизация мусора
+								</div>
+								<ul class="megamenu__links">
+									<li>Металлолома</li>
+									<li>Деревьев / веток</li>
+									<li>Шин и покрышек</li>
+									<li>Бумаги / макулатуры</li>
+									<li>Промышленных и отходов производства</li>
+								</ul>
+								<div class="megamenu__image">
+									<img
+										src="./img/services/1.png"
+										alt="Вывоз и&nbsp;утилизация мусора"
+									/>
 								</div>
 							</div>
-						</div>
-						<div class="swiper-slide">
-							<div
-								class="swiper-content"
-								style="background-image: url(./img/top-slider/slide-1.png)"
-							>
-								<div class="swiper-container slide">
-									<div class="slide__title">
-										ВЫВОЗ И УТИЛИЗАЦИЯ СТРОИТЕЛЬНЫХ ОТХОДОВ и мусора
-									</div>
-									<div class="slide__description">
-										Вы совершаете переезд или возможно вам требуется перевезти
-										большой и габаритный груз, но вы беспокоитесь о целостности
-										своих вещей Предлагаем вам заказать грузовое авто
-										с грузчиками
-									</div>
+							<div class="megamenu__item">
+								<div class="megamenu__title">Вывоз строительного мусора</div>
+								<ul class="megamenu__links">
+									<li>После ремонта</li>
+									<li>После пожара</li>
+									<li>После демонтажа</li>
+									<li>Вывоз грунта</li>
+								</ul>
+								<div class="megamenu__image">
+									<img
+										src="./img/services/2.png"
+										alt="Вывоз и&nbsp;утилизация мусора"
+									/>
 								</div>
 							</div>
-						</div>
-						<div class="swiper-slide">
-							<div
-								class="swiper-content"
-								style="background-image: url(./img/top-slider/slide-1.png)"
-							>
-								<div class="swiper-container slide">
-									<div class="slide__title">
-										ВЫВОЗ И УТИЛИЗАЦИЯ СТРОИТЕЛЬНЫХ ОТХОДОВ и мусора
-									</div>
-									<div class="slide__description">
-										Вы совершаете переезд или возможно вам требуется перевезти
-										большой и габаритный груз, но вы беспокоитесь о целостности
-										своих вещей Предлагаем вам заказать грузовое авто
-										с грузчиками
-									</div>
+							<div class="megamenu__item">
+								<div class="megamenu__title">
+									Из квартиры, офиса, дачи или гаража
+								</div>
+								<ul class="megamenu__links">
+									<li>Вывоз с грузчиками</li>
+									<li>Бытовой техники</li>
+									<li>Старой мебели</li>
+									<li>Дивана / Окон / Пианино</li>
+									<li>Хлама</li>
+								</ul>
+								<div class="megamenu__image">
+									<img
+										src="./img/services/3.png"
+										alt="Вывоз и&nbsp;утилизация мусора"
+									/>
+								</div>
+							</div>
+							<div class="megamenu__item">
+								<div class="megamenu__title">Вывоз снега</div>
+								<ul class="megamenu__links">
+									<li>Уборка и вывоз снега</li>
+									<li>Уборка с погрузкой</li>
+									<li>Очистка крыш от снега</li>
+									<li>Удаление сосулек и наледи</li>
+								</ul>
+								<div class="megamenu__image">
+									<img
+										src="./img/services/4.png"
+										alt="Вывоз и&nbsp;утилизация мусора"
+									/>
+								</div>
+							</div>
+							<div class="megamenu__item">
+								<div class="megamenu__title">Доп. Услуги</div>
+								<ul class="megamenu__links">
+									<li>Аренда спецтехникии мусорного контейнера</li>
+									<li>Демонтаж</li>
+									<li>Доставка</li>
+									<li>Спил</li>
+									<li>Песок</li>
+									<li>Щебень</li>
+								</ul>
+								<div class="megamenu__image">
+									<img
+										src="./img/services/5.png"
+										alt="Вывоз и&nbsp;утилизация мусора"
+									/>
 								</div>
 							</div>
 						</div>
 					</div>
-					<!-- If we need pagination -->
-					<div class="swiper-pagination"></div>
+					<div class="quiz__screen quiz__screen--two">two</div>
+					<div class="quiz__screen quiz__screen--three">three</div>
+					<div class="quiz__screen quiz__screen--four">four</div>
+					<div class="quiz__screen quiz__screen--five">five</div>
+					<div class="quiz__screen quiz__screen--five">six</div>
+					<div class="quiz__screen quiz__screen--five">seven</div>
+				</div>
+				<div class="quiz__controls">
+					<div class="quiz__btn quiz__btn--prev">
+						<i class="icon-carret"></i>
+						<span>Назад</span>
+					</div>
+					<div class="quiz__btn quiz__btn--next">
+						<span>Вперед</span>
+						<i class="icon-carret"></i>
+					</div>
+				</div>
+				<div class="quiz__footer">
+					<div class="quiz__footer-title">Пройдите опрос, чтобы получить</div>
+					<div class="quiz__footer-discount">
+						<i class="icon-discount"></i>
+						<span>Скидку на вывоз мусора в 20%</span>
+						<i class="icon-lock"></i>
+					</div>
 				</div>
 			</div>
-		</section>
+		</div>
 
 		<section class="advantages">
 			<div class="container">
@@ -367,681 +519,145 @@
 			</div>
 		</div>
 
-		<section class="services">
-			<div class="services_container container">
-				<div class="row">
-					<div
-						class="service"
-						style="background-image: url(./img/services/big/1.png)"
-					>
-						<div class="service__title">Вывоз и утилизация мусора</div>
-						<div class="service__description">
-							<a href="/">Металлолома</a>
-							<a href="/">Деревьев / веток</a>
-							<a href="/">Шин и покрышек</a>
-							<a href="/">Бумаги / макулатуры</a>
-							<a href="/">Промышленных и отходов производства</a>
-						</div>
-						<div class="service__link">
-							<a href="/">Подробнее <i class="icon-arrow"></i></a>
-						</div>
-					</div>
-					<div
-						class="service"
-						style="background-image: url(./img/services/big/2.png)"
-					>
-						<div class="service__title">Вывоз строительного мусора</div>
-						<div class="service__description">
-							<a href="/">После ремонта</a>
-							<a href="/">После пожара</a>
-							<a href="/">После демонтажа</a>
-							<a href="/">Вывоз грунта</a>
-						</div>
-						<div class="service__link">
-							<a href="/">Подробнее <i class="icon-arrow"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div
-						class="service"
-						style="background-image: url(./img/services/big/3.png)"
-					>
-						<div class="service__title">
-							Из квартиры, офиса, дачи или гаража
-						</div>
-						<div class="service__description">
-							<a href="/">Вывоз муслра с грузчиками</a>
-							<a href="/">Бытовой техники</a>
-							<a href="/">Старой мебели</a>
-							<a href="/">Дивана</a>
-							<a href="/">Пианино</a>
-							<a href="/">Окон</a>
-							<a href="/">Хлама</a>
-						</div>
-						<div class="service__link">
-							<a href="/">Подробнее <i class="icon-arrow"></i></a>
-						</div>
-					</div>
-					<div
-						class="service"
-						style="background-image: url(./img/services/big/4.png)"
-					>
-						<div class="service__title">Вывоз снега</div>
-						<div class="service__description">
-							<a href="/">Уборка и вывоз снега</a>
-							<a href="/">Уборка с погрузкой</a>
-							<a href="/">Очистка крыш от снега</a>
-							<a href="/">Удаление сосулек и наледи</a>
-						</div>
-						<div class="service__link">
-							<a href="/">Подробнее <i class="icon-arrow"></i></a>
-						</div>
-					</div>
-					<div
-						class="service"
-						style="background-image: url(./img/services/big/2.png)"
-					>
-						<div class="service__title">Вывоз строительного мусора</div>
-						<div class="service__description">
-							<a href="/">После ремонта</a>
-							<a href="/">После пожара</a>
-							<a href="/">После демонтажа</a>
-							<a href="/">Вывоз грунта</a>
-						</div>
-						<div class="service__link">
-							<a href="/">Подробнее <i class="icon-arrow"></i></a>
-						</div>
-					</div>
-				</div>
+		<section class="cars">
+			<div class="title_container container">
+				<h2>Газели</h2>
 			</div>
-		</section>
-
-		<section class="clients">
-			<div class="clients_container container">
-				<div class="text-icon">
-					<div class="text-icon__icon"><i class="icon-cup"></i></div>
-					<div class="text-icon__text">Обслуживаем Строительные компании</div>
-				</div>
-				<div class="text-icon">
-					<div class="text-icon__icon"><i class="icon-cup"></i></div>
-					<div class="text-icon__text">Государственные учреждения</div>
-				</div>
-				<div class="text-icon">
-					<div class="text-icon__icon"><i class="icon-cup"></i></div>
-					<div class="text-icon__text">ТСЖ, СНТ и управляющие компании</div>
-				</div>
-				<div class="text-icon">
-					<div class="text-icon__icon"><i class="icon-cup"></i></div>
-					<div class="text-icon__text">Клининговые компании</div>
-				</div>
-				<div class="text-icon">
-					<div class="text-icon__icon"><i class="icon-cup"></i></div>
-					<div class="text-icon__text">Клининговые компании</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="staff">
-			<div class="staff_container container">
-				<div class="row">
-					<div
-						class="service"
-						style="background-image: url(./img/staff/van.png)"
-					>
-						<div class="service__link">
-							<a href="/">Газели <i class="icon-arrow"></i></a>
-						</div>
-					</div>
-					<div
-						class="service"
-						style="background-image: url(./img/staff/tipper.png)"
-					>
-						<div class="service__link">
-							<a href="/">Самосвалы <i class="icon-arrow"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div
-						class="service"
-						style="background-image: url(./img/staff/loader-mobile.png)"
-					>
-						<div class="service__link">
-							<a href="/">Грузчики <i class="icon-arrow"></i></a>
-						</div>
-					</div>
-					<div
-						class="service"
-						style="background-image: url(./img/staff/traktor.png)"
-					>
-						<div class="service__link">
-							<a href="/">Спецтехника <i class="icon-arrow"></i></a>
-						</div>
-					</div>
-					<div
-						class="service"
-						style="background-image: url(./img/staff/container.png)"
-					>
-						<div class="service__link">
-							<a href="/">Контейнеры <i class="icon-arrow"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="advantages">
-			<div class="container">
-				<div class="advantage">
-					<div class="advantage__icon"><i class="icon-cup"></i></div>
-					<div class="advantage__description">
-						Соответствуем требованиям и нормативам
-					</div>
-				</div>
-				<div class="advantage">
-					<div class="advantage__icon"><i class="icon-medal"></i></div>
-					<div class="advantage__description">
-						Есть все необходимые документы, сертификаты, разрешения
-					</div>
-				</div>
-				<div class="advantage">
-					<div class="advantage__icon"><i class="icon-card"></i></div>
-					<div class="advantage__description">
-						Предоставляем профессиональную консультацию
-					</div>
-				</div>
-			</div>
-		</section>
-		<div class="advantages-mobile">
-			<div class="advantage-mobile__container container">
-				<h4 class="advantage-mobile__title">Оцените наши преимущества # 1</h4>
-				<div class="advantage-mobile__body">
-					<div class="advantage-mobile__bodyHead">
-						<div class="advantage-mobile__preview-icons">
-							<div class="advantage-mobile__preview-icon">
-								<i class="icon-medal"></i>
-							</div>
-							<div class="advantage-mobile__preview-icon">
-								<i class="icon-medal"></i>
-							</div>
-							<div class="advantage-mobile__preview-icon">
-								<i class="icon-medal"></i>
-							</div>
-						</div>
-						<div class="advantage-mobile__carret">
-							<i class="icon-carret"></i>
-						</div>
-					</div>
-					<div class="advantage-mobile__items">
-						<div class="advantage-mobile__item">
-							<div class="advantage-mobile__itemIcon">
-								<i class="icon-medal"></i>
-							</div>
-							<div class="advantage-mobile__itemTitle">
-								Не меняем цену, озвученную по телефону
-							</div>
-						</div>
-						<div class="advantage-mobile__item">
-							<div class="advantage-mobile__itemIcon">
-								<i class="icon-medal"></i>
-							</div>
-							<div class="advantage-mobile__itemTitle">
-								Оплата по факту выполнения работ
-							</div>
-						</div>
-						<div class="advantage-mobile__item">
-							<div class="advantage-mobile__itemIcon">
-								<i class="icon-medal"></i>
-							</div>
-							<div class="advantage-mobile__itemTitle">
-								Круглосуточный вывоз мусора
-							</div>
-						</div>
-						<div class="advantage-mobile__item">
-							<div class="advantage-mobile__itemIcon">
-								<i class="icon-medal"></i>
-							</div>
-							<div class="advantage-mobile__itemTitle">
-								Работаем по договору
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<section class="callback">
-			<div class="callback_container container">
-				<div class="callback__image">
-					<img src="./img/callback.png" alt="callback" />
-				</div>
-				<div class="callback__form">
-					<h3 class="callback__title">Станьте нашим клиентом</h3>
-					<div class="callback__links">
-						<span>
-							Оставьте заявку прямо сейчас или напишите нам в мессенджер:
-						</span>
-						<div>
-							<a href="/"><i class="icon-whatsapp"></i></a>
-							<a href="/"><i class="icon-Telegram"></i></a>
-						</div>
-					</div>
-					<form id="callback-form" action="/" method="post">
-						<div>
-							<input
-								class="form-input"
-								type="text"
-								name="name"
-								placeholder="Имя"
-								required
-							/>
-							<input
-								class="form-input"
-								type="tel"
-								name="phone"
-								placeholder="Телефон"
-								required
-							/>
-							<button class="form-button" type="submit">Заказать звонок</button>
-						</div>
-						<div>
-							<label>
-								<input type="checkbox" name="agreement" required />
-								<span>Согласие на обработку персональных данных</span>
-							</label>
-						</div>
-					</form>
-				</div>
-			</div>
-		</section>
-
-		<section class="advantages">
-			<div class="container">
-				<div class="advantage">
-					<div class="advantage__icon"><i class="icon-cup"></i></div>
-					<div class="advantage__description">
-						Не меняем цену, озвученную по телефону
-					</div>
-				</div>
-				<div class="advantage">
-					<div class="advantage__icon"><i class="icon-medal"></i></div>
-					<div class="advantage__description">
-						Оплата по факту выполнения работ
-					</div>
-				</div>
-				<div class="advantage">
-					<div class="advantage__icon"><i class="icon-card"></i></div>
-					<div class="advantage__description">Круглосуточный вывоз мусора</div>
-				</div>
-				<div class="advantage">
-					<div class="advantage__icon"><i class="icon-card"></i></div>
-					<div class="advantage__description">Работаем по договору</div>
-				</div>
-			</div>
-		</section>
-		<div class="advantages-mobile">
-			<div class="advantage-mobile__container container">
-				<h4 class="advantage-mobile__title">Оцените наши преимущества # 1</h4>
-				<div class="advantage-mobile__body">
-					<div class="advantage-mobile__bodyHead">
-						<div class="advantage-mobile__preview-icons">
-							<div class="advantage-mobile__preview-icon">
-								<i class="icon-medal"></i>
-							</div>
-							<div class="advantage-mobile__preview-icon">
-								<i class="icon-medal"></i>
-							</div>
-							<div class="advantage-mobile__preview-icon">
-								<i class="icon-medal"></i>
-							</div>
-						</div>
-						<div class="advantage-mobile__carret">
-							<i class="icon-carret"></i>
-						</div>
-					</div>
-					<div class="advantage-mobile__items">
-						<div class="advantage-mobile__item">
-							<div class="advantage-mobile__itemIcon">
-								<i class="icon-medal"></i>
-							</div>
-							<div class="advantage-mobile__itemTitle">
-								Не меняем цену, озвученную по телефону
-							</div>
-						</div>
-						<div class="advantage-mobile__item">
-							<div class="advantage-mobile__itemIcon">
-								<i class="icon-medal"></i>
-							</div>
-							<div class="advantage-mobile__itemTitle">
-								Оплата по факту выполнения работ
-							</div>
-						</div>
-						<div class="advantage-mobile__item">
-							<div class="advantage-mobile__itemIcon">
-								<i class="icon-medal"></i>
-							</div>
-							<div class="advantage-mobile__itemTitle">
-								Круглосуточный вывоз мусора
-							</div>
-						</div>
-						<div class="advantage-mobile__item">
-							<div class="advantage-mobile__itemIcon">
-								<i class="icon-medal"></i>
-							</div>
-							<div class="advantage-mobile__itemTitle">
-								Работаем по договору
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<section class="reviews">
-			<div class="reviews_container container">
-				<div class="swiper reviews-swiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<div class="review">
-								<div class="review__rating">
-									<i class="icon-star"></i>
-									<i class="icon-star"></i>
-									<i class="icon-star"></i>
-									<i class="icon-star"></i>
-									<i class="icon-star"></i>
-								</div>
-								<div class="review__title">Анастасия Казакова</div>
-								<div class="review__body">
-									Нужно было освободить квартиру от бытового мусора
-									после дедушки, который весь хлам тянул в дом. Мусора было
-									очень много, поэтому даже не знали, какое решение
-									нам подойдёт. Обратились сюда и решили свой вопрос за один
-									день! Менеджеры подсказали, какой вариант нам лучше выбрать,
-									а ребята оперативно подвезли контейнеры и вывезли весь хлам.
-									Действительно профессиональный подход, остались очень
-									довольны.
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="review">
-								<div class="review__rating">
-									<i class="icon-star"></i>
-									<i class="icon-star"></i>
-									<i class="icon-star"></i>
-									<i class="icon-star"></i>
-									<i class="icon-star"></i>
-								</div>
-								<div class="review__title">Анастасия Казакова</div>
-								<div class="review__body">
-									Нужно было освободить квартиру от бытового мусора
-									после дедушки, который весь хлам тянул в дом. Мусора было
-									очень много, поэтому даже не знали, какое решение
-									нам подойдёт. Обратились сюда и решили свой вопрос за один
-									день! Менеджеры подсказали, какой вариант нам лучше выбрать,
-									а ребята оперативно подвезли контейнеры и вывезли весь хлам.
-									Действительно профессиональный подход, остались очень
-									довольны.
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="review">
-								<div class="review__rating">
-									<i class="icon-star"></i>
-									<i class="icon-star"></i>
-									<i class="icon-star"></i>
-									<i class="icon-star"></i>
-									<i class="icon-star"></i>
-								</div>
-								<div class="review__title">Анастасия Казакова</div>
-								<div class="review__body">
-									Нужно было освободить квартиру от бытового мусора
-									после дедушки, который весь хлам тянул в дом. Мусора было
-									очень много, поэтому даже не знали, какое решение
-									нам подойдёт. Обратились сюда и решили свой вопрос за один
-									день! Менеджеры подсказали, какой вариант нам лучше выбрать,
-									а ребята оперативно подвезли контейнеры и вывезли весь хлам.
-									Действительно профессиональный подход, остались очень
-									довольны.
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="advantages">
-			<div class="container">
-				<div class="advantage">
-					<div class="advantage__icon"><i class="icon-cup"></i></div>
-					<div class="advantage__description">
-						Никаких дополнительных платежей, цена в договоре остается неизменной
-					</div>
-				</div>
-				<div class="advantage">
-					<div class="advantage__icon"><i class="icon-medal"></i></div>
-					<div class="advantage__description">
-						Отходы утилизируются на официальных городских полигонах
-					</div>
-				</div>
-				<div class="advantage">
-					<div class="advantage__icon"><i class="icon-card"></i></div>
-					<div class="advantage__description">
-						Сотрудничаем напрямую, не привлекая сторонних подрядчиков
-					</div>
-				</div>
-			</div>
-		</section>
-		<div class="advantages-mobile">
-			<div class="advantage-mobile__container container">
-				<h4 class="advantage-mobile__title">Оцените наши преимущества # 1</h4>
-				<div class="advantage-mobile__body">
-					<div class="advantage-mobile__bodyHead">
-						<div class="advantage-mobile__preview-icons">
-							<div class="advantage-mobile__preview-icon">
-								<i class="icon-medal"></i>
-							</div>
-							<div class="advantage-mobile__preview-icon">
-								<i class="icon-medal"></i>
-							</div>
-							<div class="advantage-mobile__preview-icon">
-								<i class="icon-medal"></i>
-							</div>
-						</div>
-						<div class="advantage-mobile__carret">
-							<i class="icon-carret"></i>
-						</div>
-					</div>
-					<div class="advantage-mobile__items">
-						<div class="advantage-mobile__item">
-							<div class="advantage-mobile__itemIcon">
-								<i class="icon-medal"></i>
-							</div>
-							<div class="advantage-mobile__itemTitle">
-								Не меняем цену, озвученную по телефону
-							</div>
-						</div>
-						<div class="advantage-mobile__item">
-							<div class="advantage-mobile__itemIcon">
-								<i class="icon-medal"></i>
-							</div>
-							<div class="advantage-mobile__itemTitle">
-								Оплата по факту выполнения работ
-							</div>
-						</div>
-						<div class="advantage-mobile__item">
-							<div class="advantage-mobile__itemIcon">
-								<i class="icon-medal"></i>
-							</div>
-							<div class="advantage-mobile__itemTitle">
-								Круглосуточный вывоз мусора
-							</div>
-						</div>
-						<div class="advantage-mobile__item">
-							<div class="advantage-mobile__itemIcon">
-								<i class="icon-medal"></i>
-							</div>
-							<div class="advantage-mobile__itemTitle">
-								Работаем по договору
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<section class="about">
-			<div class="about_container container">
+			<div class="cars_container container">
 				<div
-					class="service"
-					style="background-image: url(./img/about/price.png)"
+					class="service service-car"
+					style="background-image: url(./img/cars/gazel.png)"
 				>
+					<div class="service__title">Газель стандартная</div>
+					<div class="service__description">
+						<a href="/">1.5 тонны</a>
+						<a href="/">Длина - 3 м</a>
+						<a href="/">Высота - 1,8 м </a>
+						<a href="/">Ширина - 2 м</a>
+						<a href="/">Объем - 8 м³</a>
+					</div>
 					<div class="service__link">
-						<a href="/">Наши Цены <i class="icon-arrow"></i></a>
+						<a href="/">Заказать<i class="icon-arrow"></i></a>
 					</div>
 				</div>
 				<div
-					class="service"
-					style="background-image: url(./img/about/rocket.png)"
+					class="service service-car"
+					style="background-image: url(./img/cars/gazel.png)"
 				>
+					<div class="service__title">Газель стандартная</div>
+					<div class="service__description">
+						<a href="/">1.5 тонны</a>
+						<a href="/">Длина - 3 м</a>
+						<a href="/">Высота - 1,8 м </a>
+						<a href="/">Ширина - 2 м</a>
+						<a href="/">Объем - 8 м³</a>
+					</div>
 					<div class="service__link">
-						<a href="/">Почему мы ? <i class="icon-arrow"></i></a>
+						<a href="/">Заказать<i class="icon-arrow"></i></a>
 					</div>
 				</div>
 				<div
-					class="service"
-					style="background-image: url(./img/about/gears.png)"
+					class="service service-car"
+					style="background-image: url(./img/cars/gazel.png)"
 				>
+					<div class="service__title">Газель стандартная</div>
+					<div class="service__description">
+						<a href="/">1.5 тонны</a>
+						<a href="/">Длина - 3 м</a>
+						<a href="/">Высота - 1,8 м </a>
+						<a href="/">Ширина - 2 м</a>
+						<a href="/">Объем - 8 м³</a>
+					</div>
 					<div class="service__link">
-						<a href="/">Как мы работаем ? <i class="icon-arrow"></i></a>
+						<a href="/">Заказать<i class="icon-arrow"></i></a>
+					</div>
+				</div>
+				<div
+					class="service service-car"
+					style="background-image: url(./img/cars/gazel.png)"
+				>
+					<div class="service__title">Газель стандартная</div>
+					<div class="service__description">
+						<a href="/">1.5 тонны</a>
+						<a href="/">Длина - 3 м</a>
+						<a href="/">Высота - 1,8 м </a>
+						<a href="/">Ширина - 2 м</a>
+						<a href="/">Объем - 8 м³</a>
+					</div>
+					<div class="service__link">
+						<a href="/">Заказать<i class="icon-arrow"></i></a>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="advantages">
-			<div class="container">
-				<div class="advantage">
-					<div class="advantage__icon"><i class="icon-cup"></i></div>
-					<div class="advantage__description">
-						Работаем в соответствии с санитарно-эпидемиологическими стандартами
-					</div>
-				</div>
-				<div class="advantage">
-					<div class="advantage__icon"><i class="icon-medal"></i></div>
-					<div class="advantage__description">
-						Соблюдаем правилами обращения с опасными отходами
-					</div>
-				</div>
-				<div class="advantage">
-					<div class="advantage__icon"><i class="icon-card"></i></div>
-					<div class="advantage__description">
-						Соответствуем противопожарными положениям и экологическим нормам
-					</div>
-				</div>
+		<section class="cars">
+			<div class="title_container container">
+				<h2>Самосвалы</h2>
 			</div>
-		</section>
-		<div class="advantages-mobile">
-			<div class="advantage-mobile__container container">
-				<h4 class="advantage-mobile__title">Оцените наши преимущества # 1</h4>
-				<div class="advantage-mobile__body">
-					<div class="advantage-mobile__bodyHead">
-						<div class="advantage-mobile__preview-icons">
-							<div class="advantage-mobile__preview-icon">
-								<i class="icon-medal"></i>
-							</div>
-							<div class="advantage-mobile__preview-icon">
-								<i class="icon-medal"></i>
-							</div>
-							<div class="advantage-mobile__preview-icon">
-								<i class="icon-medal"></i>
-							</div>
-						</div>
-						<div class="advantage-mobile__carret">
-							<i class="icon-carret"></i>
-						</div>
-					</div>
-					<div class="advantage-mobile__items">
-						<div class="advantage-mobile__item">
-							<div class="advantage-mobile__itemIcon">
-								<i class="icon-medal"></i>
-							</div>
-							<div class="advantage-mobile__itemTitle">
-								Не меняем цену, озвученную по телефону
-							</div>
-						</div>
-						<div class="advantage-mobile__item">
-							<div class="advantage-mobile__itemIcon">
-								<i class="icon-medal"></i>
-							</div>
-							<div class="advantage-mobile__itemTitle">
-								Оплата по факту выполнения работ
-							</div>
-						</div>
-						<div class="advantage-mobile__item">
-							<div class="advantage-mobile__itemIcon">
-								<i class="icon-medal"></i>
-							</div>
-							<div class="advantage-mobile__itemTitle">
-								Круглосуточный вывоз мусора
-							</div>
-						</div>
-						<div class="advantage-mobile__item">
-							<div class="advantage-mobile__itemIcon">
-								<i class="icon-medal"></i>
-							</div>
-							<div class="advantage-mobile__itemTitle">
-								Работаем по договору
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<section class="information">
-			<div class="information_container container">
+			<div class="cars_container container">
 				<div
-					class="service"
-					style="background-image: url(./img/information/1.png)"
+					class="service service-car"
+					style="background-image: url(./img/cars/gazel.png)"
 				>
+					<div class="service__title">Газель стандартная</div>
+					<div class="service__description">
+						<a href="/">1.5 тонны</a>
+						<a href="/">Длина - 3 м</a>
+						<a href="/">Высота - 1,8 м </a>
+						<a href="/">Ширина - 2 м</a>
+						<a href="/">Объем - 8 м³</a>
+					</div>
 					<div class="service__link">
-						<a href="/">Новости <i class="icon-arrow"></i></a>
+						<a href="/">Заказать<i class="icon-arrow"></i></a>
 					</div>
 				</div>
 				<div
-					class="service"
-					style="background-image: url(./img/information/2.png)"
+					class="service service-car"
+					style="background-image: url(./img/cars/gazel.png)"
 				>
+					<div class="service__title">Газель стандартная</div>
+					<div class="service__description">
+						<a href="/">1.5 тонны</a>
+						<a href="/">Длина - 3 м</a>
+						<a href="/">Высота - 1,8 м </a>
+						<a href="/">Ширина - 2 м</a>
+						<a href="/">Объем - 8 м³</a>
+					</div>
 					<div class="service__link">
-						<a href="/">Статьи <i class="icon-arrow"></i></a>
+						<a href="/">Заказать<i class="icon-arrow"></i></a>
 					</div>
 				</div>
 				<div
-					class="service"
-					style="background-image: url(./img/information/3.png)"
+					class="service service-car"
+					style="background-image: url(./img/cars/gazel.png)"
 				>
+					<div class="service__title">Газель стандартная</div>
+					<div class="service__description">
+						<a href="/">1.5 тонны</a>
+						<a href="/">Длина - 3 м</a>
+						<a href="/">Высота - 1,8 м </a>
+						<a href="/">Ширина - 2 м</a>
+						<a href="/">Объем - 8 м³</a>
+					</div>
 					<div class="service__link">
-						<a href="/">Наши работы <i class="icon-arrow"></i></a>
+						<a href="/">Заказать<i class="icon-arrow"></i></a>
 					</div>
 				</div>
 				<div
-					class="service"
-					style="background-image: url(./img/information/4.png)"
+					class="service service-car"
+					style="background-image: url(./img/cars/gazel.png)"
 				>
-					<div class="service__link">
-						<a href="/">Юридическим лицам <i class="icon-arrow"></i></a>
+					<div class="service__title">Газель стандартная</div>
+					<div class="service__description">
+						<a href="/">1.5 тонны</a>
+						<a href="/">Длина - 3 м</a>
+						<a href="/">Высота - 1,8 м </a>
+						<a href="/">Ширина - 2 м</a>
+						<a href="/">Объем - 8 м³</a>
 					</div>
-				</div>
-				<div
-					class="service"
-					style="background-image: url(./img/information/5.png)"
-				>
 					<div class="service__link">
-						<a href="/">Вакансии <i class="icon-arrow"></i></a>
+						<a href="/">Заказать<i class="icon-arrow"></i></a>
 					</div>
 				</div>
 			</div>
@@ -1074,7 +690,7 @@
 							<div class="footer-nav__body">
 								<a href="/">Главная </a>
 								<a href="/">Услуги </a>
-								<a href="/">Наша техника </a>
+								<a href="./car-park.html">Наша техника </a>
 								<a href="/">Прайс </a>
 								<a href="/">О компании </a>
 								<a href="/">Партнерам </a>

@@ -12,7 +12,8 @@
 
 	display: none;
 	&--active {
-		display: block;
+		display: flex;
+		align-items: center;
 	}
 	&__screen {
 		display: none;

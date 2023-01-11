@@ -68,8 +68,11 @@ ul {
 
 // Blocks
 @import "./blocks/header";
+@import "./blocks/footer";
 @import "./blocks/nav";
+@import "./blocks/mobile-header";
 @import "./blocks/slider";
+@import "./blocks/title";
 @import "./blocks/advantages";
 @import "./blocks/services";
 @import "./blocks/clients";
@@ -78,9 +81,7 @@ ul {
 @import "./blocks/reviews";
 @import "./blocks/about";
 @import "./blocks/information";
-@import "./blocks/footer";
-
-@import "./blocks/mobile-header";
+@import "./blocks/cars";
 
 //Other
 @import "./utils";

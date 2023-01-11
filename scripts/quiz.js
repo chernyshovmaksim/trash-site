@@ -21,22 +21,25 @@ export class Quiz {
 		this.#initScreens();
 		this.#initProgress();
 
-		document.querySelector(".quiz").addEventListener("click", (e) => {
-			if (e.target.classList.contains("quiz--active")) {
-				e.target.classList.remove("quiz--active");
-				document.body.classList.remove("no-scroll");
-				localStorage.setItem("quizStep", 1);
-				this.#step = 1;
-				this.#changeScreen();
-				this.#changeProgress();
-			}
-		});
+		if (document.querySelector(".quiz")) {
+			document.querySelector(".quiz").addEventListener("click", (e) => {
+				if (e.target.classList.contains("quiz--active")) {
+					e.target.classList.remove("quiz--active");
+					document.body.classList.remove("no-scroll");
+					localStorage.setItem("quizStep", 1);
+					this.#step = 1;
+					this.#changeScreen();
+					this.#changeProgress();
+				}
+			});
+		}
 
 		document.querySelectorAll('a[href="#calculator"]').forEach((el) => {
 			el.addEventListener("click", (e) => {
 				e.preventDefault();
 				if (document.querySelector(".quiz")) {
 					document.querySelector(".quiz").classList.add("quiz--active");
+					document.body.classList.add("no-scroll");
 				}
 			});
 		});
@@ -85,10 +88,16 @@ export class Quiz {
 
 	#initProgress() {
 		this.#stepPer = 100 / this.#steps;
-		this.#progressLine = document.querySelector(".quiz__progress-percent");
-		this.#progressLine.style.width = `${this.#stepPer}%`;
-		this.#progressTitle = document.querySelector(".quiz__progress-title span");
-		this.#progressTitle.innerHTML = Math.round(this.#stepPer * this.#step);
+		if (document.querySelector(".quiz__progress-percent")) {
+			this.#progressLine = document.querySelector(".quiz__progress-percent");
+			this.#progressLine.style.width = `${this.#stepPer}%`;
+		}
+		if (document.querySelector(".quiz__progress-title span")) {
+			this.#progressTitle = document.querySelector(
+				".quiz__progress-title span"
+			);
+			this.#progressTitle.innerHTML = Math.round(this.#stepPer * this.#step);
+		}
 	}
 
 	/**
