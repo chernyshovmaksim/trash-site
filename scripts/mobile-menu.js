@@ -23,7 +23,12 @@ export class Hamburger {
 
 		this.#elsListItemParent.forEach((el) => {
 			el.addEventListener("click", (e) => {
-				console.log(e.target);
+				if (
+					e.target.parentNode.classList.contains("mobile-menu__submenu-item")
+				) {
+					//console.log(e.target.href);
+					window.location.href = e.target.href;
+				}
 				e.preventDefault();
 				el.querySelector(".mobile-menu__submenu").classList.toggle(
 					"mobile-menu__submenu--active"
