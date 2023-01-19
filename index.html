@@ -16,150 +16,7 @@
 	</head>
 
 	<body>
-		<header class="header">
-			<div class="container">
-				<div class="header__top">
-					<div class="header__logo logo">
-						<a href="/"
-							><img src="./svg/logo-icon.svg" alt="Logo" />
-							<span>Эко-город.рф</span>
-						</a>
-						<div class="logo__description">
-							Официальная утилизация и вывоз мусора
-						</div>
-					</div>
-					<div class="header__working-time">
-						<div><i class="icon-24"></i></div>
-						<div>
-							<p>Выезд на заказ: <b>Круглосуточно</b></p>
-							<p>Время приема звонков: <b>9:00 - 21:00</b></p>
-						</div>
-					</div>
-					<div class="header__messendgers">
-						<div>Задайте вопрос в мессенджерe:</div>
-						<div>
-							<a href="/"><i class="icon-whatsapp"></i></a>
-							<a href="/"><i class="icon-Telegram"></i></a>
-						</div>
-					</div>
-					<div class="header__phones">
-						<div>
-							<i class="icon-phone"></i>
-						</div>
-						<div>
-							<a href="/">+7 (963) 466-12-26</a>
-							<a href="/">+7 (963) 466-12-26</a>
-							<a href="/">Заказать звонок</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-
-		<section class="mobile-header">
-			<div class="mobile-header__container container">
-				<div class="logo">
-					<a href="/"
-						><img src="./svg/logo-icon.svg" alt="Logo" />
-						<span>Эко-город.рф</span>
-					</a>
-				</div>
-				<div class="hamburger">
-					<span class="hamburger__line"></span>
-					<span class="hamburger__line"></span>
-					<span class="hamburger__line"></span>
-				</div>
-			</div>
-			<div class="site-name container">
-				Официальная утилизация и вывоз мусора
-			</div>
-		</section>
-
-		<div class="mobile-menu">
-			<div class="mobile-menu__container container">
-				<nav class="mobile-menu__nav">
-					<ul class="mobile-menu__list">
-						<li class="mobile-menu__list-item"><a href="#">Главная</a></li>
-						<li class="mobile-menu__list-item mobile-menu__list-item--parent">
-							<a href="#">Услуги <i class="icon-carret"></i></a>
-							<ul class="mobile-menu__submenu">
-								<li class="mobile-menu__submenu-item">
-									<a href="#">Вывоз и утилизация мусора</a>
-								</li>
-								<li class="mobile-menu__submenu-item">
-									<a href="#">Вывоз строительного мусора</a>
-								</li>
-								<li class="mobile-menu__submenu-item">
-									<a href="#">Вывоз из квартиры, офиса, дачи или гаража</a>
-								</li>
-								<li class="mobile-menu__submenu-item">
-									<a href="#">Вывоз снега</a>
-								</li>
-							</ul>
-						</li>
-						<li class="mobile-menu__list-item">
-							<a href="./car-park.html">Наша техника</a>
-						</li>
-						<li class="mobile-menu__list-item"><a href="#">Прайс</a></li>
-						<li class="mobile-menu__list-item mobile-menu__list-item--parent">
-							<a href="#">О компании <i class="icon-carret"></i></a>
-							<ul class="mobile-menu__submenu">
-								<li class="mobile-menu__submenu-item">
-									<a href="#">О нас</a>
-								</li>
-								<li class="mobile-menu__submenu-item">
-									<a href="#">Как мы работаем</a>
-								</li>
-								<li class="mobile-menu__submenu-item">
-									<a href="#">Почему мы</a>
-								</li>
-							</ul>
-						</li>
-						<li class="mobile-menu__list-item"><a href="#">Юр.Лицам</a></li>
-						<li class="mobile-menu__list-item"><a href="#">Контакты</a></li>
-					</ul>
-				</nav>
-				<div class="mobile-menu__info">
-					<div class="mobile-menu__info-block">
-						<div class="mobile-menu__info-icon">
-							<i class="icon-phone"></i>
-						</div>
-						<div class="mobile-menu__info-body">
-							<div class="mobile-menu__info-phones">
-								<a href="/">+7 (963) 466-12-26</a>
-								<a href="/">+7 (963) 466-12-26</a>
-							</div>
-							<div class="mobile-menu__info-messengers">
-								<a class="mobile-menu__info-whatsapp" href="/"
-									><i class="icon-whatsapp"></i
-								></a>
-								<a class="mobile-menu__info-telegram" href="/"
-									><i class="icon-Telegram"></i
-								></a>
-							</div>
-						</div>
-					</div>
-					<div class="mobile-menu__info-block">
-						<div class="mobile-menu__info-icon">
-							<i class="icon-24"></i>
-						</div>
-						<div class="mobile-menu__info-body">
-							<span>Выезд на заказ: <br /><strong>Круглосуточно</strong></span>
-							<span
-								>Время приема звонков: <br /><strong>9:00 - 21:00</strong></span
-							>
-						</div>
-					</div>
-				</div>
-
-				<div class="mobile-menu__buttons">
-					<a href="/">
-						<i class="icon-calculator"></i>&nbsp; Рассчитать стоимость
-					</a>
-					<a href="/">Заказать звонок</a>
-				</div>
-			</div>
-		</div>
+		{{>header}} {{>mobile-header}} {{>mobile-menu}}
 
 		<section class="navigation">
 			<div class="container">
@@ -265,10 +122,10 @@
 							</div>
 						</li>
 						<li class="nav__item">
-							<a href="/car-park.html">Наша техника</a>
+							<a href="car-park.html">Наша техника</a>
 						</li>
 						<li class="nav__item">
-							<a href="/">Прайс</a>
+							<a href="price.html">Прайс</a>
 						</li>
 						<li class="nav__item item-have-sub-menu">
 							<a href="/">
