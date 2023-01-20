@@ -1,3 +1,29 @@
 .vacancy {
 	margin-bottom: 50px;
 }
+.service-vacancy {
+	width: calc(50% - 20px / 2);
+	@media (max-width: 1270px) {
+		width: 100%;
+	}
+	&__title {
+		color: $dark-green;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	&__list {
+		ul {
+			padding-left: 20px;
+		}
+	}
+	.service__description {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+.vacancy_container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
