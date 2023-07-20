@@ -45,3 +45,9 @@
 .no-scroll {
 	overflow: hidden;
 }
+
+.title__container {
+	h2 {
+		@include header-1();
+	}
+}

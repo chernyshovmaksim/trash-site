@@ -1,67 +1,77 @@
 .about_container {
-  display: grid;
-  grid-template-areas:
-    "one one two"
-    "three three two";
+	display: grid;
+	grid-template-areas:
+		"one one two"
+		"three three two";
 
-  @media (max-width: 1270px) {
-    grid-template-areas: "one" "two" "three";
-  }
-  gap: 20px;
-  .service {
-    &:nth-child(1) {
-      grid-area: one;
-      min-height: 345px;
-    }
-    &:nth-child(2) {
-      grid-area: two;
-    }
-    &:nth-child(3) {
-      grid-area: three;
-      min-height: 345px;
-    }
-  }
-  .service__link {
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 120%;
-  }
+	@media (max-width: 1270px) {
+		grid-template-areas: "one" "two" "three";
+	}
+	gap: 20px;
+	.service {
+		&:nth-child(1) {
+			grid-area: one;
+			min-height: 345px;
+		}
+		&:nth-child(2) {
+			grid-area: two;
+		}
+		&:nth-child(3) {
+			grid-area: three;
+			min-height: 345px;
+		}
+	}
+	.service__link {
+		text-transform: uppercase;
+		font-weight: 800;
+		font-size: 16px;
+		line-height: 120%;
+	}
 }
 
-.about-hero {
-  margin-bottom: 100px;
-  .title__container {
-    h2 {
-      @include header-1;
-    }
-  }
-}
 .about-hero__container {
-  @include card-bg();
+	@include card-bg();
 	margin-top: 30px;
 }
 .about-hero__title {
-  @include header-2;
+	@include header-2;
 }
 .about-hero__body {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
-.about-hero__body-content{
+.about-hero__body-content {
 	width: 555px;
 }
-.about-hero__body-image{
+.about-hero__body-image {
 	margin-left: auto;
 }
 
+.about-questions {
+	margin-top: 80px;
+}
+
 @media (max-width: 1270px) {
-  .about {
-    .service {
-      min-height: 360px;
-      background-size: 60%;
-      background-position: center;
-    }
-  }
+	.about {
+		.service {
+			min-height: 360px;
+			background-size: 60%;
+			background-position: center;
+		}
+	}
+	.about-hero__body {
+		flex-direction: column-reverse;
+	}
+	.about-hero__body-image {
+		margin-left: none;
+		max-width: 100%;
+		img {
+			width: 100%;
+			margin: 34px auto;
+		}
+	}
+	.about-hero__body-content {
+		width: 100%;
+	}
 }
