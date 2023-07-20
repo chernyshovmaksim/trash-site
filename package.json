@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "pixelperfect-tool": "1.4.0",
     "sass": "^1.56.2",
     "vite": "^4.0.0",
     "vite-plugin-handlebars": "^1.6.0",

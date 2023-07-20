@@ -1,12 +1,50 @@
 .container {
-	width: 90%;
-	max-width: 1180px;
-	margin: 0 auto;
+  width: 90%;
+  max-width: 1180px;
+  margin: 0 auto;
 }
 
 .row {
-	width: 100%;
-	display: flex;
-	flex-wrap: nowrap;
-	gap: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+@mixin header-1() {
+  color: $green;
+  /* H1 */
+  font-family: Manrope;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 110%; /* 30.8px */
+  text-transform: uppercase;
+}
+@mixin header-2() {
+  color: $black;
+  /* H2 - Manrope ExtraBolt 16 */
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 19.2px */
+  text-transform: uppercase;
+}
+
+@mixin text() {
+  color: $black;
+
+  /* H5 - Manrope Reg 14 */
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+}
+
+@mixin card-bg() {
+  border-radius: 25px;
+  background-color: $light-gray;
+  padding: 35px;
 }
