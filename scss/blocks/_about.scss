@@ -114,6 +114,27 @@
 	margin-top: 15px;
 }
 
+.about-why__container {
+}
+.about-why__logo {
+	margin: 30px 0;
+}
+.about-why__body {
+	@include card-bg();
+	margin-bottom: 60px;
+	margin-top: 10px;
+}
+.about-why__body-block {
+	border-bottom: 1px solid #fff;
+}
+.about-why__body-header {
+	@include header-2();
+}
+.about-why__body-text {
+	@include text();
+	margin-top: 15px;
+}
+
 @media (max-width: 1270px) {
 	.about {
 		.service {
@@ -135,5 +156,28 @@
 	}
 	.about-hero__body-content {
 		width: 100%;
+	}
+	.about-questions__container {
+		grid-template-areas:
+			"item-1"
+			"item-2"
+			"item-3"
+			"item-4"
+			"item-5";
+	}
+	.item-1 {
+		grid-area: item-1;
+	}
+	.item-2 {
+		grid-area: item-2;
+	}
+	.item-3 {
+		grid-area: item-3;
+	}
+	.item-4 {
+		grid-area: item-4;
+	}
+	.item-5 {
+		grid-area: item-5;
 	}
 }
